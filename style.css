@@ -1,0 +1,86 @@
+* {
+	font-family: "Nunito", sans-serif !important;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+	background-image: url("dsc2.jpg");
+  /* background: radial-gradient(
+    circle,
+	rgba(119, 13, 13, 0.92) 64%, */
+	 /* Add the blur effect */
+	 background-repeat: no-repeat;
+	width: 100%;
+}
+canvas {
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+}
+.btnbg {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.title {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	width: 100%;
+	font-size: 7em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: #d99c3b;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#countdown-box {
+	z-index: 1;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	text-align: justify;
+	width: 90%;
+	-webkit-text-stroke: 1px black;
+	text-shadow: 30px 30px  red;
+}
+#countdown-box:after {
+	display: inline-block;
+	width: 100%;
+	content: "";
+}
+.cdi {
+	display: inline-block;
+	font-size: 6em;
+	color: #d99c3b;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-left: 5%;
+	
+}
+.cdi-lbl {
+	font-size: 0.5em;
+}
+@media (max-width: 775px) {
+	.title {
+		top: 1em;
+		font-size: 2em;
+	}
+	#countdown-box {
+		text-align: center;
+	}
+	/*#countdown-box:after {
+		content: none;
+	}*/
+	.cdi {
+		/*display: block;*/
+		font-size: 2.5em;
+	}
+	.cdi-lbl {
+		color: #f5f5f5;
+	}
+}
